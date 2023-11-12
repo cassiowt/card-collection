@@ -1,0 +1,42 @@
+[
+  {
+    "id": "e0133863-88f7-49ec-bdd1-37ca8a675dba",
+    "name": "Viaduto dos Açorianos",
+    "cidade": "Porto Alegre",
+    "pais": "Brasil",
+    "descricao": " O Viaduto dos Açorianos é uma importante estrutura viária localizada na cidade de Porto Alegre, no estado do Rio Grande do Sul, Brasil. Também conhecido como Viaduto Otávio Rocha, ele foi inaugurado em 1932 e tem um papel fundamental na ligação entre as regiões central e sul da cidade.  Com uma extensão de aproximadamente 270 metros, o Viaduto dos Açorianos atravessa a Avenida Loureiro da Silva e o Arroio Dilúvio, conectando as áreas do Centro Histórico e do bairro Praia de Belas. Sua construção é caracterizada por pilares de concreto e uma arquitetura marcante, que se tornou um símbolo icônico da cidade.  Além de sua importância como via de tráfego, o viaduto também é conhecido por abrigar o Parque da Harmonia, um espaço verde que oferece aos pedestres uma área de lazer e descanso, com jardins bem cuidados e bancos para apreciar a paisagem urbana ao redor.  O Viaduto dos Açorianos representa não apenas uma infraestrutura de mobilidade urbana, mas também um marco histórico e cultural de Porto Alegre. Sua localização estratégica e sua presença imponente contribuem para a identidade da cidade e para a vida cotidiana dos seus moradores e visitantes.",
+    "imageUrl": "https://s2.glbimg.com/Xbs9qBVgJ4-ycisi5BEJTP0hJhk=/0x0:750x500/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/0/D/VTJSi5SZ2NGAJHF2Usrw/190822-jefferson-20bernardes-pmpa-01.jpg"
+  },
+  {
+    "id": "557e8498-8148-47ba-9028-d12782686617",
+    "name": "Torre Eiffel",
+    "cidade": "Paris",
+    "pais": "França",
+    "descricao": "A frágil e delicada torre de ferro será erguida apesar dos protestos. Os trabalhos duram 2 anos e se desenrolam em 3 etapas, uma vez as fundações construídas : a construção do primeiro andar, terminado em 1° de abril de 1888, a construção do segundo andar, terminado em 14 de agosto de 1888, e por fim, a montagem definitiva até o topo da torre em 31 de março de 1889, quando o monumento é inaugurado. Gustave Eiffel sobe os 1710 degraus da torre, que nesta época tinha 312 metros de altura, para colocar no seu topo a bandeira tricolor.",
+    "imageUrl": "https://cdn.pariscityvision.com/library/image/5144.jpg"
+  },
+  {
+    "id": "25123666-9737-486a-b578-5697d0d568d3",
+    "name": "Sagrada Familia",
+    "cidade": "Barcelona",
+    "pais": "Espanha",
+    "descricao": "Sagrada",
+    "imageUrl": "https://cdn.getyourguide.com/img/tour/62053657625bc.jpeg/98.jpg"
+  },
+  {
+    "id": "0abd6830-08a5-47d5-b7c3-8dafbfc13ea6",
+    "name": "Cidade de Bariloche",
+    "cidade": "Braliloche",
+    "pais": "Argentina",
+    "descricao": "Lagos gelados",
+    "imageUrl": "https://media.gettyimages.com/id/154945245/pt/foto/patag%C3%B4nia.jpg?s=612x612&w=gi&k=20&c=LHxFJdjn8Telj3MG1BvdVACSa3EiqI48RxR9PrCUZDM="
+  },
+  {
+    "id": "6f52b05d-b2d0-40fd-ba15-288907d4e149",
+    "name": "Cartão TESTE",
+    "cidade": "Porto Alegre",
+    "pais": "Brasil",
+    "descricao": "teste",
+    "imagemUrl": "https://goolge.com"
+  }
+]
