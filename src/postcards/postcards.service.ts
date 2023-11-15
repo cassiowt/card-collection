@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreatePostcardDto } from './dto/create-postcard.dto';
 import { UpdatePostcardDto } from './dto/update-postcard.dto';
 import { Postcard } from './entities/postcard.entity';
@@ -30,15 +30,49 @@ export class PostcardsService {
     return JSON.parse(data);
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} postcard`;
+  findOne(id: string): Postcard {
+    const postcards = this.findAll();
+    const postcard = postcards.find((p) => p.id === id);
+
+    if (!postcard) {
+      throw new NotFoundException(`Postcard with ID ${id} not found`);
+    }
+
+    return postcard;
   }
 
-  update(id: number, updatePostcardDto: UpdatePostcardDto) {
-    return `This action updates a #${id} postcard`;
+  update(id: string, updatePostcardDto: UpdatePostcardDto): Postcard {
+    const postcards = this.findAll();
+    const index = postcards.findIndex((p) => p.id === id);
+
+    if (index === -1) {
+      throw new NotFoundException(`Postcard with ID ${id} not found`);
+    }
+
+    const updatedPostcard: Postcard = {
+      id,
+      ...updatePostcardDto,
+    };
+
+    postcards[index] = updatedPostcard;
+
+    fs.writeFileSync(this.postcardsPath, JSON.stringify(postcards, null, 2));
+
+    return updatedPostcard;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} postcard`;
+  remove(id: string): Postcard {
+    const postcards = this.findAll();
+    const index = postcards.findIndex((p) => p.id === id);
+
+    if (index === -1) {
+      throw new NotFoundException(`Postcard with ID ${id} not found`);
+    }
+
+    const removedPostcard = postcards.splice(index, 1)[0];
+
+    fs.writeFileSync(this.postcardsPath, JSON.stringify(postcards, null, 2));
+
+    return removedPostcard;
   }
 }

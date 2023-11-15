@@ -1,5 +1,5 @@
 export class CreatePostcardDto {
-  id: number;
+  id: string;
   name: string;
   cidade: string;
   pais: string;

@@ -38,5 +38,13 @@
     "pais": "Brasil",
     "descricao": "teste",
     "imagemUrl": "https://goolge.com"
+  },
+  {
+    "id": "ad7987f1-fccc-4ce6-bddb-ca1d1ef91178",
+    "name": "Hortti",
+    "cidade": "Porto Alegre",
+    "pais": "Brasil",
+    "descricao": "StartUp - Devolvendo horas aos nossos cleintes!",
+    "imageUrl": "https://hortti.com"
   }
 ]

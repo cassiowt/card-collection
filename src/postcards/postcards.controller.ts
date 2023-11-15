@@ -20,16 +20,16 @@ export class PostcardsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.postcardsService.findOne(+id);
+    return this.postcardsService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updatePostcardDto: UpdatePostcardDto) {
-    return this.postcardsService.update(+id, updatePostcardDto);
+    return this.postcardsService.update(id, updatePostcardDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.postcardsService.remove(+id);
+    return this.postcardsService.remove(id);
   }
 }
