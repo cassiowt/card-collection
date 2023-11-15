@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { PostcardsService } from './postcards.service';
 import { CreatePostcardDto } from './dto/create-postcard.dto';
 import { UpdatePostcardDto } from './dto/update-postcard.dto';
@@ -9,12 +17,12 @@ export class PostcardsController {
   constructor(private readonly postcardsService: PostcardsService) {}
 
   @Post()
-  create(@Body() createPostcardDto: CreatePostcardDto):Postcard {
+  create(@Body() createPostcardDto: CreatePostcardDto): Postcard {
     return this.postcardsService.create(createPostcardDto);
   }
 
   @Get()
-  findAll() {
+  findAll(): Postcard[] {
     return this.postcardsService.findAll();
   }
 
@@ -24,7 +32,10 @@ export class PostcardsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updatePostcardDto: UpdatePostcardDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updatePostcardDto: UpdatePostcardDto,
+  ) {
     return this.postcardsService.update(id, updatePostcardDto);
   }
 

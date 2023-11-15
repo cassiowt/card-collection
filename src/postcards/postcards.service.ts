@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreatePostcardDto } from './dto/create-postcard.dto';
 import { UpdatePostcardDto } from './dto/update-postcard.dto';
